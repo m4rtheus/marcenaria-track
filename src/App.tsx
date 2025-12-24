@@ -1,3 +1,7 @@
+// @ts-ignore
+const firebaseConfig = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG || '{}');
+// @ts-ignore
+const appId = process.env.REACT_APP_APP_ID || '';
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { initializeApp } from 'firebase/app';
 import { 
