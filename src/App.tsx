@@ -47,14 +47,9 @@ import {
   FolderTree 
 } from 'lucide-react';
 
-// --- CONFIGURAÇÃO FIREBASE ---
-// @ts-ignore
-const firebaseConfig = JSON.parse(__firebase_config);
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
-// @ts-ignore
-const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
 
 // --- UTILS ---
 
